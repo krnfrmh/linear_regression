@@ -20,3 +20,6 @@ for t in range(1000):
   # weight update
   w = w - learning_rate*X.T.dot(delta)
   
+  # Calculate Mean Squared Error
+  mse = delta.dot(delta) / N
+  costs.append(mse)
