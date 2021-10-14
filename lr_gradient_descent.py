@@ -23,3 +23,13 @@ for t in range(1000):
   # Calculate Mean Squared Error
   mse = delta.dot(delta) / N
   costs.append(mse)
+
+# plot the costs
+plt.plot(costs)
+plt.show()
+
+# plot prediction vs target
+plt.plot(Yhat, label='prediction')
+plt.plot(Y, label='target')
+plt.legend()
+plt.show()
